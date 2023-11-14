@@ -1,0 +1,32 @@
+{
+  "name": "rollup-plugin-ngrok",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": "msanchezdev <manuel@msanchez.dev>",
+  "license": "MIT",
+  "scripts": {
+    "start": "rollup -c --bundleConfigAsCjs -w",
+    "build": "rollup -c --bundleConfigAsCjs",
+    "start:demo": "rollup -c rollup.demo.config.js --bundleConfigAsCjs -w",
+    "build:demo": "rollup -c rollup.demo.config.js --bundleConfigAsCjs",
+    "preinstall": "tsx scripts/prepack.mts"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "bun-types": "^1.0.11",
+    "picocolors": "^1.0.0",
+    "rollup": "^4.3.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^2.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.6.2",
+    "tsx": "^4.1.2",
+    "typescript": "^5.2.2",
+    "zx": "^7.2.3"
+  },
+  "dependencies": {
+    "ngrok": "^5.0.0-beta.2"
+  }
+}
